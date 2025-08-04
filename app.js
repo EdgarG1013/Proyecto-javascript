@@ -50,7 +50,6 @@ function VerificarIntento() {
         asignarElementoTexto("p", `Felicitaciones, acertaste el numero secreto en ${Intentos} ${(Intentos == 1) ? "intento" : "intentos"}`);
     // para activar el boton nuevo juego cuando el usuario acierta
     document.getElementById("reiniciar").removeAttribute("disabled");
-
 // el usuario no acierta
     } else {
             if (numeroSecreto > numeroUsuario){

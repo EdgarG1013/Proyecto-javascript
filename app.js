@@ -75,7 +75,7 @@ document.getElementById("valorUsuario").value = "";
 }
 
 function CondicionesIniciales(){
-    asignarElementoTexto("h1", "Juego del número secreto");
+    asignarElementoTexto("h1", "Juego del número secreto con haru urara");
     asignarElementoTexto("p", `Ingresa un numero entre 1 y ${numeroMaximos}`);
     numeroSecreto = generarNumeroSecreto();
     Intentos = 1;

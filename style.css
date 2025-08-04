@@ -7,6 +7,7 @@
 
 body {
     background: linear-gradient(#f04bb3 0%, #e8359d 33.33%, #f0219a 66.67%, #e61e93 100%);
+    background-image: url(./img/fondo.png);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -33,8 +34,8 @@ body::before {
     justify-content: space-between;
     border-radius: 24px;
     border: 1px solid #e8359d;
-    box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url();
+    box-shadow: 4px 4px 20px 0px rgba(255, 255, 255, 0.15);
+    background-image: url(./img/contenedor.png);
     background-size: 100% 100%;
     position: relative;
 }
@@ -85,7 +86,7 @@ body::before {
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .container__botones {
@@ -95,13 +96,13 @@ body::before {
 
 h1 {
     font-family: 'Chakra Petch', sans-serif;
-    font-size: 72px;
+    font-size: 60px;
     padding-bottom: 3rem;
 }
 
 p,
 button {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Chakra Petch', sans-serif;
 }
 
 .texto__parrafo {

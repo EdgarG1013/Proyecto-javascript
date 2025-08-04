@@ -6,7 +6,7 @@
 }
 
 body {
-    background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+    background: linear-gradient(#f04bb3 0%, #e8359d 33.33%, #f0219a 66.67%, #e61e93 100%);
     height: 100vh;
     display: flex;
     align-items: center;
@@ -15,7 +15,6 @@ body {
 
 
 body::before {
-    background-image: url("img/code.png");
     background-repeat: no-repeat;
     background-position: right;
     content: "";
@@ -33,9 +32,9 @@ body::before {
     align-items: center;
     justify-content: space-between;
     border-radius: 24px;
-    border: 1px solid #1875E8;
+    border: 1px solid #e8359d;
     box-shadow: 4px 4px 20px 0px rgba(1, 8, 14, 0.15);
-    background-image: url("img/Ruido.png");
+    background-image: url();
     background-size: 100% 100%;
     position: relative;
 }
@@ -55,7 +54,7 @@ body::before {
 
 .container__boton {
     border-radius: 16px;
-    background: #1875E8;
+    background: #ec8ab6;
     padding: 16px 24px;
     width: 100%;
     font-size: 24px;
@@ -80,9 +79,9 @@ body::before {
     width: 100%;
     height: 72px;
     border-radius: 16px;
-    background-color: #FFF;
+    background-color: #ec8ab6;
     border: none;
-    color: #1875E8;
+    color: #ffffff;
     padding: 2rem;
     font-size: 24px;
     font-weight: 700;
@@ -108,4 +107,8 @@ button {
 .texto__parrafo {
     font-size: 32px;
     font-weight: 400;
+}
+
+img {
+    
 }

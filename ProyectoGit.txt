@@ -1,0 +1,13 @@
+1. para inicializar git en nuestro proyecto nos movemos a la carpeta y escribimos:
+
+git init
+
+2. para conocer el estado del proyecto en git y sus versiones:
+
+git status
+
+3. para agregar un archivo del proyecto a git 
+
+git add
+
+4. 

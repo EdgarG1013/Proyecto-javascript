@@ -53,3 +53,7 @@ Estos comandos son especialmente relevantes:
 -------------------------------------------------------------------------------------------------
 esto lo escribi para hacer cambios en la rama nobordes para despues unirla a la rama main
 -------------------------------------------------------------------------------------------------
+
+-------------------------------------------------------------------------------------------------
+esto lo escribi para hacer cambios en la rama main para despues unirla a la rama nobordes
+-------------------------------------------------------------------------------------------------

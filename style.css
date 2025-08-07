@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     color: white;
+    text-shadow: 1px  0px 0px #e61e93,
+                 0px  1px 0px #e61e93,
+                -1px  0px 0px #e61e93,
+                 0px -1px 0px #e61e93;
 }
 
 body {

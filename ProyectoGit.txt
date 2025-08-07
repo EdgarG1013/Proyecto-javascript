@@ -48,3 +48,8 @@ Estos comandos son especialmente relevantes:
 * `git log --graph --decorate --oneline`: representación visual del árbol de commits.
 * `git config --global core.excludesfile`: definir archivos ignorados a nivel usuario.
 
+
+
+-------------------------------------------------------------------------------------------------
+esto lo escribi para hacer cambios en la rama nobordes para despues unirla a la rama main
+-------------------------------------------------------------------------------------------------

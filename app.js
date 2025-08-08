@@ -11,13 +11,21 @@ let ListaNumeroSorteados = [];
 let numeroMaximos = 10;
 
 
-// creamos una funcion que de forma generica inserte en el html
+//---- [ creamos una funcion que de forma generica inserte en el html ] ------//
 function asignarElementoTexto(elemento, texto) {
     let elementoHTML = document.querySelector(elemento);
     elementoHTML.innerHTML = texto;
     return;
 }
 
+//---- [ creamos una funcion que cambie de forma generica una imagen en el html ] ------//
+function cambiarImagen(idImg, srcImg) {
+    const imagen = document.getElementById(idImg);
+    imagen.src = srcImg;
+
+}
+
+//---- [ creamos una funcion que genera un numero seudoaleatorio para el juego ] ------//
 function generarNumeroSecreto() {
 // generamos el numero secreto y lo guardamos en "numero generado"
  let numeroGenrado = Math.floor(Math.random()*numeroMaximos)+1;
@@ -41,6 +49,7 @@ console.log(ListaNumeroSorteados)
 
 }
 
+//---- [ creamos una funcion que verifica el intento del usuario ] ------//
 function VerificarIntento() {
     let numeroUsuario = parseInt(document.getElementById("valorUsuario").value);
 
@@ -48,6 +57,7 @@ function VerificarIntento() {
     if (numeroSecreto == numeroUsuario){
 // el usuario acierta
         asignarElementoTexto("p", `Felicitaciones, acertaste el numero secreto en ${Intentos} ${(Intentos == 1) ? "intento" : "intentos"}`);
+        cambiarImagen("id_imagen", "./img/haruWin.png");
     // para activar el boton nuevo juego cuando el usuario acierta
     document.getElementById("reiniciar").removeAttribute("disabled");
 // el usuario no acierta
@@ -64,6 +74,7 @@ function VerificarIntento() {
     return;
 }
 
+//---- [ creamos una funcion que limpia la caja de texto ] ------//
 function limpiarCaja(){
 //  let valorCaja = document.querySelector("#valorUsuario") // con queryselector usamos "#" para buscar por id
 //  valorCaja.value = ""; 
@@ -74,6 +85,7 @@ document.getElementById("valorUsuario").value = "";
 
 }
 
+//---- [ creamos una funcion que restebalce a las condiciones iniciales ] ------//
 function CondicionesIniciales(){
     asignarElementoTexto("h1", "Juego del número secreto con haru urara");
     asignarElementoTexto("p", `Ingresa un numero entre 1 y ${numeroMaximos}`);
@@ -83,14 +95,17 @@ function CondicionesIniciales(){
  return;
 }
 
+//---- [ creamos una funcion que reinicia el juego ] ------//
 function ReiniciarJuego() {
     limpiarCaja();
     CondicionesIniciales();
+    cambiarImagen("id_imagen", "./img/haru.png");
 // desabilitamos el boton de nuevo juego
     document.getElementById("reiniciar").setAttribute("disabled", true);
 
  return;
 }
 
+//---- [ ejecutamos las condiciones iniciales ] ------//
 CondicionesIniciales();
 

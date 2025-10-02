@@ -109,3 +109,5 @@ function ReiniciarJuego() {
 //---- [ ejecutamos las condiciones iniciales ] ------//
 CondicionesIniciales();
 
+//-----cambio de pueba de git hub-----//
+console.log("cambio de prueba de git hub")
